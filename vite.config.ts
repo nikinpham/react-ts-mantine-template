@@ -22,4 +22,7 @@ export default defineConfig({
       ignoreTryCatch: false,
     },
   },
+  esbuild: {
+    logOverride: { 'this-is-undefined-in-esm': 'silent' },
+  },
 });

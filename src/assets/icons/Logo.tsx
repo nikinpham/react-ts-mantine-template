@@ -1,9 +1,10 @@
 import { ColorScheme } from '@mantine/core';
-type Props = {
-  colorScheme: ColorScheme;
-};
 
-const Logo = (props: Props) => {
+interface LogoProps {
+  colorScheme: ColorScheme;
+}
+
+const Logo = (props: LogoProps) => {
   const { colorScheme } = props;
 
   return (

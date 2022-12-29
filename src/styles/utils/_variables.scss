@@ -28,20 +28,3 @@ $spacers: map-merge(
   ),
   $spacers
 );
-
-$status: (
-  'default': 'transparent',
-  'red': var(--theme-red),
-  'green': var(--theme-green),
-  'yellow': var(--theme-yellow),
-  'blue': var(--theme-blue),
-  'red-dark': var(--theme-red-dark),
-  'grey': var(--theme-grey)
-    /*
-    Due to an Vite production build issue https://github.com/vitejs/vite/issues/3924 that caused style import in wrong order.
-    So, DO NOT add purple here. Purple must not !important for now.
-    When this issue is fixed, !important is no longer need for all status.
-
-    'purple': var(--theme-purple),  
-  */,
-);

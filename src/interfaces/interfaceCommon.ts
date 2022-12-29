@@ -19,7 +19,7 @@ export interface ILanguageConfig {
   lang: TSupportedLangCode;
   img: string;
   alt?: string;
-  tooltip?: string;
+  name: string;
 }
 
 export interface ISystemStore {

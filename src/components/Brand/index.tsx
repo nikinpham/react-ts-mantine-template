@@ -1,9 +1,10 @@
-import { Group, ActionIcon, useMantineColorScheme, Box } from '@mantine/core';
 import Logo from '@/assets/icons/Logo';
-import { Moon, SunHigh } from 'tabler-icons-react';
+import { Box, Group, useMantineColorScheme } from '@mantine/core';
+import LanguagePicker from '../LanguagePicker';
+import ChangeAppTheme from './components/ChangeAppTheme';
 
-export function Brand() {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+const Brand = () => {
+  const { colorScheme } = useMantineColorScheme();
 
   return (
     <Box
@@ -18,14 +19,13 @@ export function Brand() {
     >
       <Group position="apart">
         <Logo colorScheme={colorScheme} />
-        <ActionIcon variant="default" onClick={() => toggleColorScheme()} size={30}>
-          {colorScheme === 'dark' ? (
-            <SunHigh size={16} strokeWidth={2} />
-          ) : (
-            <Moon size={16} strokeWidth={2} />
-          )}
-        </ActionIcon>
+        <Group>
+          <LanguagePicker />
+          <ChangeAppTheme />
+        </Group>
       </Group>
     </Box>
   );
-}
+};
+
+export default Brand;

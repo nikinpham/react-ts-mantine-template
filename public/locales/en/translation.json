@@ -1,9 +1,12 @@
 {
-  "dashboard": {
-    "hello_world": "안녕하세요 세계",
-    "title": "안녕하세요"
+  "LANGUAGE": {
+    "EN": "English",
+    "KO": "한국어"
   },
-  "list_event": {
-    "title": "이벤트 나열"
+  "DASHBOARD": {
+    "TITLE": "Dashboard"
+  },
+  "SETTINGS": {
+    "TITLE": "Settings"
   }
 }

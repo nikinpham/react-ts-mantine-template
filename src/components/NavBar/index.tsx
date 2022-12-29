@@ -1,7 +1,7 @@
-import { Path } from '@/config/path';
-import { Navbar, NavLink } from '@mantine/core';
-import { Link } from 'react-router-dom';
-import { Brand } from '../Brand';
+import { Navbar } from '@mantine/core';
+import Brand from '../Brand';
+import ChangeLanguage from './components/ChangeLanguage';
+import MainLink from './components/MainLink';
 
 const CustomNavBar = () => {
   return (
@@ -9,16 +9,9 @@ const CustomNavBar = () => {
       <Navbar.Section mt="xs">
         <Brand />
       </Navbar.Section>
-      <Navbar.Section>
-        <NavLink
-          component={Link}
-          to={Path.DASHBOARD}
-          label="Dashboard"
-          active={location.pathname === Path.DASHBOARD}
-        />
+      <Navbar.Section grow>
+        <MainLink />
       </Navbar.Section>
-      <Navbar.Section grow>Grow section</Navbar.Section>
-      <Navbar.Section>Last section</Navbar.Section>
     </Navbar>
   );
 };
