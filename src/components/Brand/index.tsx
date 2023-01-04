@@ -1,10 +1,13 @@
-import Logo from '@/assets/icons/Logo';
 import { Box, Group, useMantineColorScheme } from '@mantine/core';
 import LanguagePicker from '../LanguagePicker';
+import { ReactComponent as Logo } from '@/assets/icons/Logo_dark.svg';
+import { ReactComponent as LogoDark } from '@/assets/icons/Logo.svg';
+import { Link } from 'react-router-dom';
+import { Path } from '@/config/path';
 import ChangeAppTheme from './components/ChangeAppTheme';
-
 const Brand = () => {
   const { colorScheme } = useMantineColorScheme();
+  const isDarkMode = colorScheme === 'dark';
 
   return (
     <Box
@@ -18,7 +21,7 @@ const Brand = () => {
       })}
     >
       <Group position="apart">
-        <Logo colorScheme={colorScheme} />
+        <Link to={Path.DASHBOARD}>{isDarkMode ? <LogoDark /> : <Logo />}</Link>
         <Group>
           <LanguagePicker />
           <ChangeAppTheme />

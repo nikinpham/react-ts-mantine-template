@@ -6,6 +6,17 @@
   "DASHBOARD": {
     "TITLE": "계기반"
   },
+  "TLS_COMMUNICATIONS": {
+    "TITLE": "TLS 통신",
+    "STATUS": {
+      "NONE": "통신 없음",
+      "TLS": "TLS 통신",
+      "IMPOSSIBLE": "통신 불가​"
+    }
+  },
+  "CERTIFICATES": {
+    "TITLE": "인증서"
+  },
   "SETTINGS": {
     "TITLE": "설정"
   }

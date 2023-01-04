@@ -1,6 +1,5 @@
 import { Path } from '@/config/path';
 import { LazyExoticComponent } from 'react';
-import { Socket } from 'socket.io-client';
 
 /**
  * Get all 'values' of `T` interface
@@ -20,10 +19,4 @@ export interface ILanguageConfig {
   img: string;
   alt?: string;
   name: string;
-}
-
-export interface ISystemStore {
-  socket: Socket;
-  // isAFK: boolean;
-  // setIsAFK: (value: boolean) => void;
 }

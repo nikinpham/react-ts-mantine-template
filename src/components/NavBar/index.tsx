@@ -1,6 +1,5 @@
 import { Navbar } from '@mantine/core';
 import Brand from '../Brand';
-import ChangeLanguage from './components/ChangeLanguage';
 import MainLink from './components/MainLink';
 
 const CustomNavBar = () => {

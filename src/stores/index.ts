@@ -1,8 +1,10 @@
+import { IRootStore } from '@/interfaces/interfaceTLSCommunications';
 import create from 'zustand';
-import { ISystemStore } from '@/interfaces/interfaceCommon';
 import { createSystemSlice } from './systemStore';
+import { createTLSCommunicationSlice } from './tlsCommunicationsStore';
 
-const useGlobalStore = create<ISystemStore>()((...helpers) => ({
+const useGlobalStore = create<IRootStore>()((...helpers) => ({
   ...createSystemSlice(...helpers),
+  ...createTLSCommunicationSlice(...helpers),
 }));
 export default useGlobalStore;

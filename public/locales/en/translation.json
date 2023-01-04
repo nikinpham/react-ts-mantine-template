@@ -6,6 +6,17 @@
   "DASHBOARD": {
     "TITLE": "Dashboard"
   },
+  "TLS_COMMUNICATIONS": {
+    "TITLE": "TLS Communications",
+    "STATUS": {
+      "NONE": "No communication",
+      "TLS": "TLS communication",
+      "IMPOSSIBLE": "Communication impossible​"
+    }
+  },
+  "CERTIFICATES": {
+    "TITLE": "Certificates"
+  },
   "SETTINGS": {
     "TITLE": "Settings"
   }
