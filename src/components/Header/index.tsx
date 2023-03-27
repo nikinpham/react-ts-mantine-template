@@ -1,21 +1,22 @@
-import { Path } from '@/config/path';
-import { Navbar, NavLink } from '@mantine/core';
-import { Link } from 'react-router-dom';
+import { Header, HeaderProps } from '@mantine/core';
+import React from 'react';
 
-const CustomHeader = () => {
+const CustomHeader = (props: HeaderProps) => {
+  const { children, ...rest } = props;
+
   return (
-    <Navbar p="md" hiddenBreakpoint="sm" width={{ sm: 200, lg: 300 }}>
-      <Navbar.Section>
-        <NavLink
-          component={Link}
-          to={Path.DASHBOARD}
-          label="Dashboard"
-          active={location.pathname === Path.DASHBOARD}
-        />
-      </Navbar.Section>
-      <Navbar.Section grow>Grow section</Navbar.Section>
-      <Navbar.Section>Last section</Navbar.Section>
-    </Navbar>
+    <Header
+      p="md"
+      style={{
+        display: 'flex',
+        width: '100%',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+      }}
+      {...rest}
+    >
+      {children}
+    </Header>
   );
 };
 

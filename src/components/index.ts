@@ -1,6 +1,3 @@
-import * as PageLayout from './PageLayout';
-import * as NavBar from './NavBar';
-import * as Brand from './Brand';
-import * as LanguagePicker from './LanguagePicker';
-
-export default { PageLayout, NavBar, Brand, LanguagePicker };
+export * as PageLayout from './PageLayout';
+export * as Brand from './Brand';
+export * as LanguagePicker from './LanguagePicker';

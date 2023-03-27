@@ -1,6 +1,6 @@
 import { Box, Text } from '@mantine/core';
 
-const Settings = () => {
+const Events = () => {
   return (
     <Box>
       <Text>Settings</Text>
@@ -8,4 +8,4 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default Events;

@@ -1,23 +1,33 @@
+import React from 'react';
+
 import { AppShell, useMantineTheme } from '@mantine/core';
-import { Outlet } from 'react-router-dom';
-import CustomNavBar from '../NavBar';
 import './PageLayout.scss';
+import { Outlet } from 'react-router-dom';
+import Header from '@/components/Header';
+import Brand from '@/components/Brand';
 
 const PageLayout = () => {
   const theme = useMantineTheme();
+
+  const header = () => {
+    return (
+      <Header height={72}>
+        <Brand />
+      </Header>
+    );
+  };
+
   return (
-    <>
-      <AppShell
-        styles={{
-          main: {
-            background: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
-          },
-        }}
-        navbar={<CustomNavBar />}
-      >
-        <Outlet />
-      </AppShell>
-    </>
+    <AppShell
+      styles={{
+        main: {
+          background: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
+        },
+      }}
+      header={header()}
+    >
+      <Outlet />
+    </AppShell>
   );
 };
 

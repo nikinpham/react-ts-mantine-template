@@ -6,7 +6,7 @@
   "DASHBOARD": {
     "TITLE": "계기반"
   },
-  "SETTINGS": {
-    "TITLE": "설정"
+  "EVENTS": {
+    "TITLE": "Events"
   }
 }

@@ -6,7 +6,7 @@
   "DASHBOARD": {
     "TITLE": "Dashboard"
   },
-  "SETTINGS": {
-    "TITLE": "Settings"
+  "EVENTS": {
+    "TITLE": "Events List"
   }
 }

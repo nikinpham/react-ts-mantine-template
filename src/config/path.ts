@@ -1,6 +1,6 @@
 export enum Path {
   DASHBOARD = '/',
-  SETTINGS = '/settings',
+  EVENTS = '/events',
   NOT_FOUND = '/not-found',
   UNDEFINED = '*',
 }
